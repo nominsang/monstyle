@@ -1,4 +1,4 @@
-# minstyle.io
+# monstyle -- Mongolian Style
 
 > A simple & Lightweight CSS Framework, including dark mode.
 
