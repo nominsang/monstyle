@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to MonStyle!"
 date:   2024-04-29 15:22:58 +0800
-categories: jekyll update
+categories: monstyle
 ---
 
 传统蒙古文风格布局别具一格，如何在网页中实现？这是本站探讨的主要问题。
