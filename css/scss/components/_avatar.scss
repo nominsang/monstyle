@@ -1,6 +1,6 @@
-@mixin sizeAvatar($font-size, $line-height, $width, $height) {
-	width: $width;
-	height: $height;
+@mixin sizeAvatar($font-size, $line-height, $inline-size, $block-size) {
+	inline-size: $inline-size;
+	block-size: $block-size;
 
 	.ms-text {
 		font-size: $font-size;
@@ -10,8 +10,8 @@
 
 .ms-avatar {
 	/* General */
-	width: 55px;
-	height: 55px;
+	inline-size: 55px;
+	block-size: 55px;
 	display: inline-block;
 	position: relative;
 
@@ -37,14 +37,15 @@
 	.ms-avatar-img {
 		/* General */
 		display: block;
-		max-width: 100%;
-		min-width: 100%;
+		max-inline-size: 100%;
+		min-inline-size: 100%;
 
 		/* Border */
 		border-radius: 50%;
 
 		/* Margin */
-		margin: 0 auto;
+		margin-block: 0;
+		margin-inline: auto;
 	}
 
 	.ms-text {
@@ -62,10 +63,10 @@
 		@include sizeAvatar(2.5rem, 75px, 75px, 75px);
 
 		.ms-status {
-			width: 15px;
-			height: 15px;
-			right: 4px;
-			bottom: 4px;
+			inline-size: 15px;
+			block-size: 15px;
+			inset-inline-end: 4px;
+			inset-block-end: 4px;
 		}
 	}
 
@@ -73,19 +74,19 @@
 		@include sizeAvatar(3.3rem, 95px, 95px, 95px);
 
 		.ms-status {
-			width: 20px;
-			height: 20px;
-			right: 2px;
-			bottom: 2px;
+			inline-size: 20px;
+			block-size: 20px;
+			inset-inline-end: 2px;
+			inset-block-end: 2px;
 		}
 	}
 
 	.ms-status {
-		width: 15px;
-		height: 15px;
+		inline-size: 15px;
+		block-size: 15px;
 		position: absolute;
-		right: -5px;
-		bottom: -5px;
+		inset-inline-end: -5px;
+		inset-block-end: -5px;
 		background-color: rgba(243, 243, 243, 1);
 		border: 3px solid rgba(var(--default-border-color), 1);
 		overflow: hidden;

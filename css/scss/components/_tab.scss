@@ -1,7 +1,7 @@
 .ms-tab {
-	width: 100%;
+	inline-size: 100%;
 	box-sizing: border-box;
-	border-bottom: 2px solid rgba(var(--default-border-color), 1);
+	border-block-end: 2px solid rgba(var(--default-border-color), 1);
 	margin: 0;
 	padding: 0;
 
@@ -23,26 +23,26 @@
 				text-decoration: none;
 				margin: 0;
 				padding: 1rem;
-				border-bottom: 2px solid transparent;
+				border-block-end: 2px solid transparent;
 
 				&:hover {
-					border-bottom: 4px solid rgba(var(--default-border-color), 1);
+					border-block-end: 4px solid rgba(var(--default-border-color), 1);
 				}
 
 				&.ms-active {
-					border-bottom: 4px solid rgba(var(--default-border-color), 1);
+					border-block-end: 4px solid rgba(var(--default-border-color), 1);
 				}
 			}
 
 			&.ms-logo {
 				img {
-					max-height: 30px;
-					vertical-align: bottom;
+					max-block-size: 30px;
+					vertical-align: end;
 				}
 
 				a {
 					&:hover {
-						border-bottom: none;
+						border-block-end: none;
 					}
 				}
 			}
@@ -60,7 +60,7 @@
 				flex: 1;
 
 				a {
-					width: 100%;
+					inline-size: 100%;
 				}
 			}
 		}

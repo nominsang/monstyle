@@ -1,36 +1,37 @@
 .ms-card {
 	/* General */
-	width: 100%;
-	height: auto;
+	inline-size: 100%;
+	block-size: auto;
 	box-sizing: border-box;
 
 	/* Margin */
-	margin: 1rem 0;
+	margin-block: 1rem;
+	margin-inline: 0;
 	padding: 0;
 
 	.ms-card-pic {
-		margin-bottom: 1rem;
+		margin-block-end: 1rem;
 		position: relative;
 
 		img {
-			width: 100%;
+			inline-size: 100%;
 			border-radius: var(--default-border-radius);
 		}
 
 		.ms-card-pic-stick {
 			/* Position */
 			position: absolute;
-			top: 10px;
-			right: 10px;
+			inset-block-start: 10px;
+			inset-inline-end: 10px;
 
 			/* Text */
-			text-align: right;
+			text-align: start;
 		}
 	}
 
 	.ms-card-title {
 		margin: 0;
-		padding-bottom: 1rem;
+		padding-block-end: 1rem;
 
 		h1,
 		h2,
@@ -57,7 +58,7 @@
 
 	.ms-card-content {
 		margin: 0;
-		padding-bottom: 1rem;
+		padding-block-end: 1rem;
 
 		p {
 			color: rgba(var(--main-text-color), 1);
@@ -73,7 +74,7 @@
 
 	.ms-section {
 		.ms-section-bloc {
-			border-bottom: 2px solid rgba(var(--default-border-color), 1);
+			border-block-end: 2px solid rgba(var(--default-border-color), 1);
 			padding: 1rem;
 
 			p {
@@ -82,12 +83,12 @@
 			}
 
 			&:first-child {
-				border-top: 2px solid rgba(var(--default-border-color), 1);
+				border-block-start: 2px solid rgba(var(--default-border-color), 1);
 			}
 
 			&:last-child {
-				border-bottom: 2px solid rgba(var(--default-border-color), 1);
-				margin-bottom: 1rem;
+				border-block-end: 2px solid rgba(var(--default-border-color), 1);
+				margin-block-end: 1rem;
 			}
 		}
 	}

@@ -1,8 +1,8 @@
 /*
-* minstyle.io - A simple CSS Framework !
-* Repo : https://github.com/Airmime/minstyle.io
+* monstyle - A simple CSS Framework based on CSS logical properties !
+* Repo : https://github.com/Hantas/monstyle
 * Version : v2.0.2
-* Website : https://minstyle.io/
+* Website : https://hantas.cn/monstyle
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -43,6 +43,7 @@ html[data-theme="dark"] {
 }
 
 html {
+	writing-mode: vertical-lr;
 	box-sizing: border-box;
 }
 

@@ -1,10 +1,10 @@
 {
-	"name": "minstyle.io",
+	"name": "monstyle",
 	"version": "2.0.2",
 	"description": "A simple CSS Framework !",
-	"main": "dist/minstyle.io.css",
+	"main": "dist/monstyle.css",
 	"author": "Rémi MARION",
-	"homepage": "https://minstyle.io",
+	"homepage": "https://hantas.cn",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

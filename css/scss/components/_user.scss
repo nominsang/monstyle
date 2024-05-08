@@ -1,6 +1,6 @@
 .ms-user {
 	/* General */
-	width: 100%;
+	inline-size: 100%;
 	overflow: auto;
 	position: relative;
 	box-sizing: border-box;
@@ -21,7 +21,7 @@
 	.ms-user-info {
 		text-align: center;
 		margin: 0 auto;
-		margin-top: 1rem;
+		margin-block-start: 1rem;
 
 		p {
 			color: rgba(var(--main-text-color), 1);
@@ -35,33 +35,34 @@
 	.ms-user-content {
 		color: rgba(var(--main-text-color), 1);
 		box-sizing: border-box;
-		margin: 0 auto;
-		margin-top: 1rem;
+		margin-block: 0;
+		margin-inline: auto;
+		margin-block-start: 1rem;
 	}
 
 	.ms-user-pined {
 		position: absolute;
-		top: 0.5rem;
-		right: 0.5rem;
+		inset-block-start: 0.5rem;
+		inset-inline-end: 0.5rem;
 	}
 
 	&.ms-compact {
 		.ms-avatar {
-			float: left;
+			float: inline-start;
 			margin: 0;
 		}
 
 		.ms-user-info {
-			float: left;
-			text-align: left;
+			float: inline-start;
+			text-align: start;
 			margin: 0;
-			margin-left: 1rem;
+			margin-inline-start: 1rem;
 		}
 
 		.ms-user-content {
-			float: left;
-			width: 100%;
-			margin-top: 1rem;
+			float: inline-start;
+			inline-size: 100%;
+			margin-block-start: 1rem;
 		}
 	}
 

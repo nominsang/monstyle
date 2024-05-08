@@ -1,47 +1,47 @@
 .ms-loading {
-	width: 25px;
-	height: 25px;
+	inline-size: 25px;
+	block-size: 25px;
 	border-radius: 50%;
 	border: 5px solid rgba(var(--light-bg-color), 1);
-	border-top: 5px solid rgba(var(--default-bg-color), 1);
+	border-block-start: 5px solid rgba(var(--default-bg-color), 1);
 	-webkit-animation: spin 0.5s linear infinite;
 	animation: spin 0.5s linear infinite;
 
 	&.ms-small {
-		width: 10px;
-		height: 10px;
+		inline-size: 10px;
+		block-size: 10px;
 		border: 3px solid rgba(var(--light-bg-color), 1);
-		border-top: 3px solid rgba(var(--default-bg-color), 1);
+		border-block-start: 3px solid rgba(var(--default-bg-color), 1);
 	}
 
 	&.ms-medium {
-		width: 45px;
-		height: 45px;
+		inline-size: 45px;
+		block-size: 45px;
 		border: 8px solid rgba(var(--light-bg-color), 1);
-		border-top: 8px solid rgba(var(--default-bg-color), 1);
+		border-block-start: 8px solid rgba(var(--default-bg-color), 1);
 	}
 
 	&.ms-large {
-		width: 70px;
-		height: 70px;
+		inline-size: 70px;
+		block-size: 70px;
 		border: 10px solid rgba(var(--light-bg-color), 1);
-		border-top: 10px solid rgba(var(--default-bg-color), 1);
+		border-block-start: 10px solid rgba(var(--default-bg-color), 1);
 	}
 
 	&.ms-primary {
-		border-top-color: rgba(var(--primary-bg-color), 1);
+		border-block-start-color: rgba(var(--primary-bg-color), 1);
 	}
 
 	&.ms-secondary {
-		border-top-color: rgba(var(--secondary-bg-color), 1);
+		border-block-start-color: rgba(var(--secondary-bg-color), 1);
 	}
 
 	&.ms-action {
-		border-top-color: rgba(var(--action-bg-color), 1);
+		border-block-start-color: rgba(var(--action-bg-color), 1);
 	}
 
 	&.ms-action2 {
-		border-top-color: rgba(var(--action2-bg-color), 1);
+		border-block-start-color: rgba(var(--action2-bg-color), 1);
 	}
 }
 

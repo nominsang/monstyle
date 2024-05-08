@@ -535,9 +535,7 @@ input[type=submit] {
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   outline: none;
   /* Color */
   background-color: rgba(var(--light-bg-color), 1);
@@ -552,6 +550,7 @@ input[type=submit] {
   text-align: center;
   text-decoration: none;
   /* Animation */
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s ease all;
   /* Margin */
   margin: 0rem 0.1rem;
@@ -1180,9 +1179,7 @@ select {
   display: inline-block;
   height: 40px;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   box-sizing: border-box;
   box-shadow: none;
   /* Font */
@@ -1201,9 +1198,6 @@ select {
   /* Options */
   /* Size */
   /* Events */
-}
-input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=text]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=file]::-moz-placeholder, input:not([type])::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: rgba(var(--light-text-color), 1);
 }
 input[type=email]::placeholder,
 input[type=number]::placeholder,
@@ -7038,8 +7032,7 @@ select option {
   background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 }
 .ms-hero .ms-hero-background img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 .ms-hero .ms-hero-body {
   z-index: 2;
@@ -7300,6 +7293,7 @@ select option {
   border-radius: 50%;
   border: 5px solid rgba(var(--light-bg-color), 1);
   border-top: 5px solid rgba(var(--default-bg-color), 1);
+  -webkit-animation: spin 0.5s linear infinite;
   animation: spin 0.5s linear infinite;
 }
 .ms-loading.ms-small {
@@ -7331,6 +7325,15 @@ select option {
 }
 .ms-loading.ms-action2 {
   border-top-color: rgba(var(--action2-bg-color), 1);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   0% {
@@ -7395,6 +7398,7 @@ select option {
 }
 .ms-menu .ms-menu-link ul li a {
   /* Animation */
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s ease all;
   color: rgba(var(--main-text-color), 1);
   text-decoration: none;
@@ -7914,4 +7918,6 @@ hr, .ms-hr {
 }
 .ms-user.ms-border {
   border: 2px solid rgba(var(--default-border-color), 1);
-}/*# sourceMappingURL=minstyle.io.css.map */
+}
+
+/*# sourceMappingURL=minstyle.io.css.map */

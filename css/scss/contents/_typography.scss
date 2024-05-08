@@ -42,11 +42,12 @@ mark,
 	color: rgb(25, 25, 25);
 
 	/* Border */
-	border-bottom: 0.05rem solid #ffd367;
+	border-block-end: 0.05rem solid #ffd367;
 	border-radius: var(--default-border-radius);
 
 	/* Margin */
-	padding: 0.1rem 0.2rem;
+	padding-block: 0.1rem;
+	padding-inline: 0.2rem;
 }
 
 /* Code */
@@ -64,7 +65,8 @@ code,
 	border-radius: var(--default-border-radius);
 
 	/* Margin */
-	padding: 0.2rem 0.4rem;
+	padding-block: 0.2rem;
+	padding-inline: 0.4rem;
 }
 
 /* Terminal */
@@ -80,7 +82,8 @@ kbd,
 	border-radius: var(--default-border-radius);
 
 	/* Margin */
-	padding: 0.2rem 0.2rem;
+	padding-block: 0.2rem;
+	padding-inline: 0.2rem;
 }
 
 /* Sementic */
@@ -116,7 +119,7 @@ pre cite {
 sup {
 	/* General */
 	position: relative;
-	top: -0.4rem;
+	inset-block-start: -0.4rem;
 
 	/* Text */
 	line-height: 0;
@@ -127,7 +130,7 @@ sup {
 sub {
 	/* General */
 	position: relative;
-	bottom: -0.2rem;
+	inset-block-end: -0.2rem;
 
 	/* Test */
 	line-height: 0;
@@ -143,9 +146,9 @@ blockquote,
 	font-weight: inherit;
 
 	/* Border */
-	border-left: 4px solid rgba(var(--default-border-color), 1);
-	border-top-right-radius: var(--default-border-radius);
-	border-bottom-right-radius: var(--default-border-radius);
+	border-inline-start: 4px solid rgba(var(--default-border-color), 1);
+	border-block-start-inline-end-radius: var(--default-border-radius);
+	border-block-end-inline-end-radius: var(--default-border-radius);
 
 	/* Margin */
 	margin: 1rem;
@@ -179,8 +182,8 @@ blockquote,
 /* HR */
 hr, .ms-hr {
 	/* General */
-	width: 100%;
-	height: 1px;
+	inline-size: 100%;
+	block-size: 1px;
 
 	/* Color */
 	background-color: rgba(var(--light-bg-color), 1);
@@ -189,5 +192,6 @@ hr, .ms-hr {
 	border: none;
 
 	/* Margin */
-	margin: 1rem 0;
+	margin-block: 1rem;
+	margin-inline: 0;
 }

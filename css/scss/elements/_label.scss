@@ -23,7 +23,7 @@
 .ms-label {
 	/* General */
 	display: inline-flex;
-	width: auto;
+	inline-size: auto;
 
 	/* Color */
 	background-color: rgba(var(--light-bg-color), 1);
@@ -38,8 +38,10 @@
 	font-size: 0.9rem;
 
 	/* Margins */
-	margin: 0 0.1rem;
-	padding: 0.1rem 0.4rem;
+	margin-block: 0;
+	margin-inline: 0.1rem;
+	padding-block: 0.1rem;
+	padding-inline: 0.4rem;
 
 	&.ms-label-active{
 		box-shadow: 0 0 0 5px rgba(var(--light-bg-color), .3);
@@ -132,17 +134,20 @@
 	&.ms-small {
 		font-size: 0.7rem;
 		border-radius: var(--default-border-radius);
-		padding: 0.1rem 0.3rem;
+		padding-block: 0.1rem;
+		padding-inline: 0.3rem;
 	}
 
 	&.ms-medium {
 		font-size: 1rem;
-		padding: 0.3rem 0.7rem;
+		padding-block: 0.3rem;
+		padding-inline: 0.7rem;
 	}
 
 	&.ms-large {
 		font-size: 1.2rem;
-		padding: 0.5rem 0.9rem;
+		padding-block: 0.5rem;
+		padding-inline: 0.9rem;
 	}
 
 	&.ms-rounded {
@@ -152,12 +157,12 @@
 	/* Close */
 	.ms-close {
 		/* General */
-		height: 15px;
-		width: 15px;
+		block-size: 15px;
+		inline-size: 15px;
 		position: relative;
 		display: inline-block;
 		overflow: hidden;
-		margin-left: 2px;
+		margin-inline-start: 2px;
 
 		/* Text */
 		text-align: center;
@@ -168,13 +173,13 @@
 		&:before,
 		&:after {
 			/* General */
-			height: 10px;
-			width: 2px;
+			block-size: 10px;
+			inline-size: 2px;
 
 			/* Position */
 			position: absolute;
-			left: 6.7px;
-			top: 2.5px;
+			inset-inline-start: 6.7px;
+			inset-block-start: 2.5px;
 
 			/* Content */
 			content: " ";

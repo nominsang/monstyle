@@ -160,22 +160,22 @@
 }
 
 /* Text position */
-.ms-text-left {
-	text-align: left !important;
+.ms-text-start {
+	text-align: start !important;
 }
 .ms-text-center {
 	text-align: center !important;
 }
-.ms-text-right {
-	text-align: right !important;
+.ms-text-end {
+	text-align: end !important;
 }
 
 /* Float */
-.ms-float-left {
-	float: left !important;
+.ms-float-start {
+	float: inline-start !important;
 }
-.ms-float-right {
-	float: right !important;
+.ms-float-end {
+	float: inline-end !important;
 }
 .ms-float-clear {
 	clear: both !important;
@@ -199,39 +199,39 @@
 }
 .ms-posision-absolute-top {
 	position: absolute !important;
-	top: 0 !important;
+	inset-block-start: 0 !important;
 }
 .ms-posision-absolute-bottom {
 	position: absolute !important;
-	bottom: 0 !important;
+	inset-block-end: 0 !important;
 }
 .ms-posision-absolute-left {
 	position: absolute !important;
-	left: 0 !important;
+	inset-inline-start: 0 !important;
 }
 .ms-posision-absolute-right {
 	position: absolute !important;
-	right: 0 !important;
+	inset-inline-end: 0 !important;
 }
 .ms-posision-absolute-right-top {
 	position: absolute !important;
-	right: 0 !important;
-	top: 0 !important;
+	inset-inline-end: 0 !important;
+	inset-block-start: 0 !important;
 }
 .ms-posision-absolute-right-bottom {
 	position: absolute !important;
-	right: 0 !important;
-	bottom: 0 !important;
+	inset-inline-end: 0 !important;
+	inset-block-end: 0 !important;
 }
 .ms-posision-absolute-left-top {
 	position: absolute !important;
-	left: 0 !important;
-	top: 0 !important;
+	inset-inline-start: 0 !important;
+	inset-block-start: 0 !important;
 }
 .ms-posision-absolute-left-bottom {
 	position: absolute !important;
-	left: 0 !important;
-	bottom: 0 !important;
+	inset-inline-start: 0 !important;
+	inset-block-end: 0 !important;
 }
 
 .ms-posision-fixed {
@@ -239,39 +239,39 @@
 }
 .ms-posision-fixed-top {
 	position: fixed !important;
-	top: 0 !important;
+	inset-block-start: 0 !important;
 }
 .ms-posision-fixed-bottom {
 	position: fixed !important;
-	bottom: 0 !important;
+	inset-block-end: 0 !important;
 }
 .ms-posision-fixed-left {
 	position: fixed !important;
-	left: 0 !important;
+	inset-inline-start: 0 !important;
 }
 .ms-posision-fixed-right {
 	position: fixed !important;
-	right: 0 !important;
+	inset-inline-end: 0 !important;
 }
 .ms-posision-fixed-right-top {
 	position: fixed !important;
-	right: 0 !important;
-	top: 0 !important;
+	inset-inline-end: 0 !important;
+	inset-block-start: 0 !important;
 }
 .ms-posision-fixed-right-bottom {
 	position: fixed !important;
-	right: 0 !important;
-	bottom: 0 !important;
+	inset-inline-end: 0 !important;
+	inset-block-end: 0 !important;
 }
 .ms-posision-fixed-left-top {
 	position: fixed !important;
-	left: 0 !important;
-	top: 0 !important;
+	inset-inline-start: 0 !important;
+	inset-block-start: 0 !important;
 }
 .ms-posision-fixed-left-bottom {
 	position: fixed !important;
-	left: 0 !important;
-	bottom: 0 !important;
+	inset-inline-start: 0 !important;
+	inset-block-end: 0 !important;
 }
 
 .ms-posision-sticky {
@@ -281,7 +281,8 @@
 /* Center div */
 .ms-div-center {
 	display: block !important;
-	margin: 0 auto !important;
+	margin-block: 0 !important;
+	margin-inline: auto !important;
 }
 
 /* Shape */
@@ -364,10 +365,10 @@
 	justify-content: space-evenly !important;
 }
 .ms-flex-justify-left {
-	justify-content: left !important;
+	justify-content: inline-start !important;
 }
 .ms-flex-justify-right {
-	justify-content: right !important;
+	justify-content: inline-end !important;
 }
 
 .ms-flex-align-items-start {
@@ -598,55 +599,56 @@ $base-margin: 1rem;
 
 @for $i from 1 through 20 {
 	.ms-mt-#{$i} {
-		margin-top: $base-margin * $i;
+		margin-block-start: $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-mr-#{$i} {
-		margin-right: $base-margin * $i;
+		margin-inline-end: $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-mb-#{$i} {
-		margin-bottom: $base-margin * $i;
+		margin-block-end: $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-ml-#{$i} {
-		margin-left: $base-margin * $i;
+		margin-inline-start: $base-margin * $i;
 	}
 }
 
 /* Padding */
 @for $i from 1 through 20 {
 	.ms-p-#{$i} {
-		padding: $base-margin * $i $base-margin * $i $base-margin * $i $base-margin * $i;
+		padding-block: $base-margin * $i $base-margin * $i;
+		padding-inline: $base-margin * $i $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-pt-#{$i} {
-		padding-top: $base-margin * $i;
+		padding-block-start: $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-pr-#{$i} {
-		padding-right: $base-margin * $i;
+		padding-inline-end: $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-pb-#{$i} {
-		padding-bottom: $base-margin * $i;
+		padding-block-end: $base-margin * $i;
 	}
 }
 
 @for $i from 1 through 20 {
 	.ms-pl-#{$i} {
-		padding-left: $base-margin * $i;
+		padding-inline-start: $base-margin * $i;
 	}
 }

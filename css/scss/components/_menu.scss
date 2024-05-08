@@ -1,8 +1,8 @@
 .ms-menu {
 	/* General */
 	z-index: 999;
-	width: 100%;
-	height: 50px;
+	inline-size: 100%;
+	block-size: 50px;
 
 	/* Colors */
 	line-height: 50px;
@@ -13,15 +13,16 @@
 
 	.ms-menu-logo {
 		/* General */
-		width: auto;
-		height: 50px;
-		float: left;
+		inline-size: auto;
+		block-size: 50px;
+		float: inline-start;
 
 		/* Colors */
 		color: rgba(var(--main-text-color), 1);
 
 		/* Margin */
-		margin: 0 0 0 15px;
+		margin-inline: 15px 0;
+		margin-block: 0;
 		padding: 0;
 
 		p {
@@ -37,26 +38,27 @@
 	}
 
 	.ms-menu-link {
-		width: auto;
-		height: 100%;
-		float: right;
+		inline-size: auto;
+		block-size: 100%;
+		float: inline-end;
 
 		ul {
-			height: inherit;
+			block-size: inherit;
 			list-style: none;
-			text-align: right;
-			margin: 0 15px 0 0;
+			text-align: end;
+			margin-block: 0;
+			margin-inline: 0 15px;
 			padding: 0;
 
 			li {
 				font-weight: 400;
-				height: inherit;
+				block-size: inherit;
 				display: inline-block;
 				margin: 0;
 				padding: 0;
 
 				&:last-child {
-					padding-right: 0;
+					padding-inline-end: 0;
 				}
 
 				a {
@@ -67,7 +69,8 @@
 					color: rgba(var(--main-text-color), 1);
 					text-decoration: none;
 					font-weight: 600;
-					padding: 0 20px;
+					padding-block: 0;
+					padding-inline: 20px;
 
 					&:hover {
 						color: rgba(var(--main-text-color), 0.6);
@@ -93,27 +96,27 @@
 }
 
 /* Screen < 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-height: 768px) {
 	.ms-menu {
 		.ms-menu-link {
 			z-index: 999;
 			background-color: rgba(var(--light-bg-color), 1);
-			width: 100%;
-			height: auto;
+			inline-size: 100%;
+			block-size: auto;
 			margin: 0;
 			padding: 0;
 
 			ul {
 				display: block;
-				max-height: 0;
+				max-block-size: 0;
 				overflow: hidden;
-				transition: max-height 0.3s;
+				transition: max-width 0.3s;
 				margin: 0;
 
 				li {
-					text-align: left;
-					width: 100%;
-					height: 50px;
+					text-align: start;
+					inline-size: 100%;
+					block-size: 50px;
 					margin: 0;
 					padding: 0;
 				}
@@ -121,17 +124,17 @@
 		}
 
 		.ms-menu-icon {
-			width: 100px;
-			height: inherit;
+			inline-size: 100px;
+			block-size: inherit;
 			display: block;
 			position: absolute;
-			top: 0;
-			right: 0;
+			inset-block-start: 0;
+			inset-block-end: 0;
 			line-height: 60px;
 		}
 
 		#ms-menu-toggle:checked ~ ul {
-			max-height: 100%;
+			max-inline-size: 100%;
 		}
 
 		.ms-menu-icon i {

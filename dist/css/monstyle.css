@@ -37,7 +37,6 @@ html[data-theme=dark] {
 }
 
 html {
-  writing-mode: vertical-lr;
   box-sizing: border-box;
 }
 
@@ -80,10 +79,8 @@ a {
   border: 2px solid rgba(var(--default-border-color), 1);
   border-radius: var(--default-border-radius);
   /* Margin */
-  margin-block: 0.5rem;
-  margin-inline: 0;
-  padding-block: 1rem;
-  padding-inline: 1.4rem;
+  margin: 0.5rem 0;
+  padding: 1rem 1.4rem;
   /* Options */
   /* Close */
 }
@@ -168,17 +165,14 @@ a {
   text-align: center;
 }
 .ms-alert.ms-small {
-  padding-block: 0.7rem;
-  padding-inline: 1rem;
+  padding: 0.7rem 1rem;
 }
 .ms-alert.ms-medium {
-  padding-block: 1.2rem;
-  padding-inline: 1.8rem;
+  padding: 1.2rem 1.8rem;
   font-size: 1.1rem;
 }
 .ms-alert.ms-large {
-  padding-block: 1.5rem;
-  padding-inline: 2rem;
+  padding: 1.5rem 2rem;
   font-size: 1.2rem;
 }
 .ms-alert .ms-close {
@@ -188,8 +182,8 @@ a {
   display: block;
   /* Position */
   position: absolute;
-  inset-block-start: 2px;
-  inset-inline-end: 2px;
+  block-start: 2px;
+  inline-end: 2px;
   /* Text */
   text-align: center;
   /* Cursor */
@@ -201,8 +195,8 @@ a {
   inline-size: 2px;
   /* Position */
   position: absolute;
-  inset-inline-start: 9px;
-  inset-block-start: 5px;
+  inline-start: 9px;
+  block-start: 5px;
   /* Content */
   content: " ";
   /* Color */
@@ -231,8 +225,7 @@ a {
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */
-  margin-block: 1rem;
-  margin-inline: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 .ms-article .ms-article-picture {
@@ -246,17 +239,17 @@ a {
 }
 .ms-article .ms-article-picture .ms-article-picture-overlay {
   position: absolute;
-  inset-block-start: 0;
-  inset-inline-start: 0;
-  inset-block-end: 0;
-  inset-inline-end: 0;
+  block-start: 0;
+  inline-start: 0;
+  block-end: 0;
+  inline-end: 0;
   background: rgb(2, 0, 36);
   background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 }
 .ms-article .ms-article-picture .ms-article-picture-title {
   position: absolute;
-  inset-block-end: 1.5rem;
-  inset-inline-start: 1rem;
+  block-end: 1.5rem;
+  inline-start: 1rem;
 }
 .ms-article .ms-article-picture .ms-article-picture-title h1,
 .ms-article .ms-article-picture .ms-article-picture-title h2,
@@ -285,8 +278,7 @@ a {
   display: inline-block;
   color: rgba(var(--default-bg-color), 1);
   font-size: 14px;
-  margin-block: 0;
-  margin-inline: 0 1rem;
+  margin: 0 1rem 0 0;
   padding: 0;
 }
 .ms-article .ms-article-infos i {
@@ -295,8 +287,7 @@ a {
 .ms-article .ms-article-title {
   display: block;
   margin: 0;
-  padding-block: 1rem;
-  padding-inline: 0;
+  padding: 1rem 0;
 }
 .ms-article .ms-article-title h1,
 .ms-article .ms-article-title h2,
@@ -316,8 +307,7 @@ a {
 .ms-article .ms-article-text {
   color: rgba(var(--main-text-color), 0.9);
   margin: 0;
-  padding-block: 1rem;
-  padding-inline: 0;
+  padding: 1rem 0;
 }
 .ms-article .ms-article-text p {
   margin: 0;
@@ -334,13 +324,11 @@ a {
   text-decoration: none;
   font-weight: 600;
   color: var(--main-text-color);
-  margin-block: 1rem;
-  margin-inline: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 .ms-article .ms-list-label {
-  margin-block: 0.5rem 0;
-  margin-inline: 0;
+  margin: 0.5rem 0 0 0;
   padding: 0;
 }
 .ms-article .ms-list-label ul {
@@ -378,8 +366,7 @@ a {
   /* Border */
   border-radius: 50%;
   /* Margin */
-  margin-block: 0;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 .ms-avatar .ms-text {
   font-size: 1.7rem;
@@ -406,8 +393,8 @@ a {
 .ms-avatar.ms-medium .ms-status {
   inline-size: 15px;
   block-size: 15px;
-  inset-inline-end: 4px;
-  inset-block-end: 4px;
+  inline-end: 4px;
+  block-end: 4px;
 }
 .ms-avatar.ms-large {
   inline-size: 95px;
@@ -420,15 +407,15 @@ a {
 .ms-avatar.ms-large .ms-status {
   inline-size: 20px;
   block-size: 20px;
-  inset-inline-end: 2px;
-  inset-block-end: 2px;
+  inline-end: 2px;
+  block-end: 2px;
 }
 .ms-avatar .ms-status {
   inline-size: 15px;
   block-size: 15px;
   position: absolute;
-  inset-inline-end: -5px;
-  inset-block-end: -5px;
+  inline-end: -5px;
+  block-end: -5px;
   background-color: rgb(243, 243, 243);
   border: 3px solid rgba(var(--default-border-color), 1);
   overflow: hidden;
@@ -446,8 +433,7 @@ a {
 
 .ms-breadcrumb {
   /* Margin */
-  padding-block: 1rem;
-  padding-inline: 1rem;
+  padding: 1rem;
   /* Border */
   border-radius: var(--default-border-radius);
 }
@@ -467,8 +453,7 @@ a {
   /* Font */
   font-weight: 500;
   /* Margin */
-  margin-block: 0;
-  margin-inline: 0.5rem 0;
+  margin: 0 0 0 0.5rem;
   padding: 0;
 }
 .ms-breadcrumb ul li a:hover {
@@ -505,8 +490,7 @@ a {
   border-block-start-inline-end-radius: var(--default-border-radius);
 }
 .ms-browser .ms-tab-browser {
-  padding-block: 0.6rem;
-  padding-inline: 0.6rem;
+  padding: 0.6rem 0.6rem;
 }
 .ms-browser .ms-tab-browser .ms-dots {
   display: inline-block;
@@ -533,17 +517,14 @@ a {
   display: inline-block;
   background-color: rgba(var(--main-bg), 1);
   border-radius: 50rem;
-  margin-block: 0;
-  margin-inline: 0.5rem 0;
-  padding-block: 0.2rem;
-  padding-inline: 1rem;
+  margin: 0 0 0 0.5rem;
+  padding: 0.2rem 1rem;
 }
 .ms-browser .ms-content {
   background-color: rgba(var(--main-bg), 1);
   box-sizing: border-box;
   overflow: hidden;
-  padding-block: 15px;
-  padding-inline: 15px;
+  padding: 15px;
 }
 
 button,
@@ -572,10 +553,8 @@ input[type=submit] {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s ease all;
   /* Margin */
-  margin-block: 0rem;
-  margin-inline: 0.1rem;
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
+  margin: 0rem 0.1rem;
+  padding: 0.5rem 1rem;
   /* Options */
   /* Actions */
 }
@@ -840,7 +819,7 @@ button.ms-fullwidth,
 .ms-btn.ms-fullwidth,
 input[type=button].ms-fullwidth,
 input[type=submit].ms-fullwidth {
-  inline-size: 100%;
+  width: 100%;
   text-align: center;
 }
 button.ms-small,
@@ -848,24 +827,21 @@ button.ms-small,
 input[type=button].ms-small,
 input[type=submit].ms-small {
   font-size: 0.8rem;
-  padding-block: 0.4rem;
-  padding-inline: 0.8rem;
+  padding: 0.4rem 0.8rem;
 }
 button.ms-medium,
 .ms-btn.ms-medium,
 input[type=button].ms-medium,
 input[type=submit].ms-medium {
   font-size: 1.1rem;
-  padding-block: 0.7rem;
-  padding-inline: 1.5rem;
+  padding: 0.7rem 1.5rem;
 }
 button.ms-large,
 .ms-btn.ms-large,
 input[type=button].ms-large,
 input[type=submit].ms-large {
   font-size: 1.2rem;
-  padding-block: 0.9rem;
-  padding-inline: 2.5rem;
+  padding: 0.9rem 2.5rem;
 }
 button:hover,
 .ms-btn:hover,
@@ -940,8 +916,7 @@ button[disabled],
 .ms-btn-group .ms-btn,
 .ms-btn-group input[type=button],
 .ms-btn-group input[type=submit] {
-  margin-block: 0.1rem;
-  margin-inline: 0;
+  margin: 0.1rem 0;
 }
 .ms-btn-group button:first-child:not(:last-child),
 .ms-btn-group .ms-btn:first-child:not(:last-child),
@@ -996,8 +971,7 @@ button[disabled],
   block-size: auto;
   box-sizing: border-box;
   /* Margin */
-  margin-block: 1rem;
-  margin-inline: 0;
+  margin: 1rem 0;
   padding: 0;
   /* Options */
 }
@@ -1012,8 +986,8 @@ button[disabled],
 .ms-card .ms-card-pic .ms-card-pic-stick {
   /* Position */
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  block-start: 10px;
+  inline-end: 10px;
   /* Text */
   text-align: start;
 }
@@ -1062,7 +1036,7 @@ button[disabled],
   margin: 0;
 }
 .ms-card .ms-section .ms-section-bloc:first-child {
-  border-block-start: 2px solid rgba(var(--default-border-color), 1);
+  border-top: 2px solid rgba(var(--default-border-color), 1);
 }
 .ms-card .ms-section .ms-section-bloc:last-child {
   border-block-end: 2px solid rgba(var(--default-border-color), 1);
@@ -1133,8 +1107,8 @@ button[disabled],
   inline-size: 100%;
   /* Position */
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: 100%;
+  inline-start: 0;
+  block-start: 100%;
 }
 .ms-dropdown .ms-dropdown-content .ms-dropdown-content-list {
   /* General */
@@ -1142,8 +1116,8 @@ button[disabled],
   min-inline-size: 7rem;
   /* Position */
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: 100%;
+  inline-start: 0;
+  block-start: 100%;
   /* Color */
   background-color: rgba(var(--light-bg-color), 1);
   /* Border */
@@ -1168,8 +1142,7 @@ button[disabled],
   color: rgba(var(--main-text-color), 1);
   /* Margin */
   margin: 0;
-  padding-block: 0.3rem;
-  padding-inline: 0.5rem;
+  padding: 0.3rem 0.5rem;
 }
 .ms-dropdown .ms-dropdown-content .ms-dropdown-content-list li a:hover {
   background-color: rgba(var(--default-bg-color), 0.1);
@@ -1182,15 +1155,13 @@ button[disabled],
   text-align: center;
   box-sizing: border-box;
   margin: 0;
-  padding-block: 3rem 4rem;
-  padding-inline: 1rem;
+  padding: 3rem 1rem 4rem 1rem;
 }
 .ms-footer p {
   inline-size: 100%;
 }
 .ms-footer.ms-small {
-  padding-block: 1.5rem;
-  padding-inline: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 input[type=email],
@@ -1222,8 +1193,7 @@ select {
   border-radius: var(--default-border-radius);
   /* Margin */
   margin: 0;
-  padding-block: 0;
-  padding-inline: 0.8rem;
+  padding: 0 0.8rem;
   /* Colors */
   /* Options */
   /* Size */
@@ -1414,8 +1384,7 @@ label,
 }
 .ms-form-group-inline label,
 .ms-form-group-inline .ms-label {
-  margin-block: 0;
-  margin-inline: 0.5rem;
+  margin: 0 0.5rem;
 }
 .ms-form-group-inline input, .ms-form-group-inline select, .ms-form-group-inline textarea {
   inline-size: auto;
@@ -1429,8 +1398,7 @@ select {
 }
 
 textarea {
-  padding-block: 10px;
-  padding-inline: 10px;
+  padding: 10px;
   block-size: inherit;
 }
 
@@ -1440,8 +1408,7 @@ input[disabled] {
 
 input[type=file] {
   border: none;
-  padding-block: 0;
-  padding-inline: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 select option {
@@ -1469,27 +1436,27 @@ select option {
   margin-inline-start: auto;
 }
 
-@media (min-height: 576px) {
+@media (min-inline-size: 576px) {
   .container-sm, .container {
     max-inline-size: 540px;
   }
 }
-@media (min-height: 768px) {
+@media (min-inline-size: 768px) {
   .container-md, .container-sm, .container {
     max-inline-size: 720px;
   }
 }
-@media (min-height: 992px) {
+@media (min-inline-size: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-inline-size: 960px;
   }
 }
-@media (min-height: 1200px) {
+@media (min-inline-size: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-inline-size: 1140px;
   }
 }
-@media (min-height: 1400px) {
+@media (min-inline-size: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-inline-size: 1320px;
   }
@@ -1722,7 +1689,7 @@ select option {
   --bs-gutter-y: 3rem;
 }
 
-@media (min-height: 576px) {
+@media (min-inline-size: 576px) {
   .col-sm {
     flex: 1 0 0%;
   }
@@ -1891,7 +1858,7 @@ select option {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-height: 768px) {
+@media (min-inline-size: 768px) {
   .col-md {
     flex: 1 0 0%;
   }
@@ -2060,7 +2027,7 @@ select option {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-height: 992px) {
+@media (min-inline-size: 992px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -2229,7 +2196,7 @@ select option {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-height: 1200px) {
+@media (min-inline-size: 1200px) {
   .col-xl {
     flex: 1 0 0%;
   }
@@ -2398,7 +2365,7 @@ select option {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-height: 1400px) {
+@media (min-inline-size: 1400px) {
   .col-xxl {
     flex: 1 0 0%;
   }
@@ -2780,38 +2747,31 @@ select option {
 }
 
 .m-0 {
-  margin-inline: 0 !important;
-  margin-block: 0 !important;
+  margin: 0 !important;
 }
 
 .m-1 {
-  margin-inline: 0.25rem !important;
-  margin-block: 0.25rem !important;
+  margin: 0.25rem !important;
 }
 
 .m-2 {
-  margin-inline: 0.5rem !important;
-  margin-block: 0.5rem !important;
+  margin: 0.5rem !important;
 }
 
 .m-3 {
-  margin-inline: 1rem !important;
-  margin-block: 1rem !important;
+  margin: 1rem !important;
 }
 
 .m-4 {
-  margin-inline: 1.5rem !important;
-  margin-block: 1.5rem !important;
+  margin: 1.5rem !important;
 }
 
 .m-5 {
-  margin-inline: 3rem !important;
-  margin-block: 3rem !important;
+  margin: 3rem !important;
 }
 
 .m-auto {
-  margin-inline: auto !important;
-  margin-block: auto !important;
+  margin: auto !important;
 }
 
 .mx-0 {
@@ -2851,37 +2811,37 @@ select option {
 
 .my-0 {
   margin-block-start: 0 !important;
-  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
 }
 
 .my-1 {
   margin-block-start: 0.25rem !important;
-  margin-block-start: 0.25rem !important;
+  margin-block-end: 0.25rem !important;
 }
 
 .my-2 {
   margin-block-start: 0.5rem !important;
-  margin-block-start: 0.5rem !important;
+  margin-block-end: 0.5rem !important;
 }
 
 .my-3 {
   margin-block-start: 1rem !important;
-  margin-block-start: 1rem !important;
+  margin-block-end: 1rem !important;
 }
 
 .my-4 {
   margin-block-start: 1.5rem !important;
-  margin-block-start: 1.5rem !important;
+  margin-block-end: 1.5rem !important;
 }
 
 .my-5 {
   margin-block-start: 3rem !important;
-  margin-block-start: 3rem !important;
+  margin-block-end: 3rem !important;
 }
 
 .my-auto {
   margin-block-start: auto !important;
-  margin-block-start: auto !important;
+  margin-block-end: auto !important;
 }
 
 .mt-0 {
@@ -2941,31 +2901,31 @@ select option {
 }
 
 .mb-0 {
-  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
 }
 
 .mb-1 {
-  margin-block-start: 0.25rem !important;
+  margin-block-end: 0.25rem !important;
 }
 
 .mb-2 {
-  margin-block-start: 0.5rem !important;
+  margin-block-end: 0.5rem !important;
 }
 
 .mb-3 {
-  margin-block-start: 1rem !important;
+  margin-block-end: 1rem !important;
 }
 
 .mb-4 {
-  margin-block-start: 1.5rem !important;
+  margin-block-end: 1.5rem !important;
 }
 
 .mb-5 {
-  margin-block-start: 3rem !important;
+  margin-block-end: 3rem !important;
 }
 
 .mb-auto {
-  margin-block-start: auto !important;
+  margin-block-end: auto !important;
 }
 
 .ms-0 {
@@ -2997,33 +2957,27 @@ select option {
 }
 
 .p-0 {
-  padding-inline: 0 !important;
-  padding-block: 0 !important;
+  padding: 0 !important;
 }
 
 .p-1 {
-  padding-inline: 0.25rem !important;
-  padding-block: 0.25rem !important;
+  padding: 0.25rem !important;
 }
 
 .p-2 {
-  padding-inline: 0.5rem !important;
-  padding-block: 0.5rem !important;
+  padding: 0.5rem !important;
 }
 
 .p-3 {
-  padding-inline: 1rem !important;
-  padding-block: 1rem !important;
+  padding: 1rem !important;
 }
 
 .p-4 {
-  padding-inline: 1.5rem !important;
-  padding-block: 1.5rem !important;
+  padding: 1.5rem !important;
 }
 
 .p-5 {
-  padding-inline: 3rem !important;
-  padding-block: 3rem !important;
+  padding: 3rem !important;
 }
 
 .px-0 {
@@ -3182,7 +3136,7 @@ select option {
   padding-inline-start: 3rem !important;
 }
 
-@media (min-height: 576px) {
+@media (min-inline-size: 576px) {
   .d-sm-inline {
     display: inline !important;
   }
@@ -3343,32 +3297,25 @@ select option {
     order: 6 !important;
   }
   .m-sm-0 {
-    margin-inline: 0 !important;
-    margin-block: 0 !important;
+    margin: 0 !important;
   }
   .m-sm-1 {
-    margin-inline: 0.25rem !important;
-    margin-block: 0.25rem !important;
+    margin: 0.25rem !important;
   }
   .m-sm-2 {
-    margin-inline: 0.5rem !important;
-    margin-block: 0.5rem !important;
+    margin: 0.5rem !important;
   }
   .m-sm-3 {
-    margin-inline: 1rem !important;
-    margin-block: 1rem !important;
+    margin: 1rem !important;
   }
   .m-sm-4 {
-    margin-inline: 1.5rem !important;
-    margin-block: 1.5rem !important;
+    margin: 1.5rem !important;
   }
   .m-sm-5 {
-    margin-inline: 3rem !important;
-    margin-block: 3rem !important;
+    margin: 3rem !important;
   }
   .m-sm-auto {
-    margin-inline: auto !important;
-    margin-block: auto !important;
+    margin: auto !important;
   }
   .mx-sm-0 {
     margin-inline-end: 0 !important;
@@ -3400,31 +3347,31 @@ select option {
   }
   .my-sm-0 {
     margin-block-start: 0 !important;
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .my-sm-1 {
     margin-block-start: 0.25rem !important;
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .my-sm-2 {
     margin-block-start: 0.5rem !important;
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .my-sm-3 {
     margin-block-start: 1rem !important;
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .my-sm-4 {
     margin-block-start: 1.5rem !important;
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .my-sm-5 {
     margin-block-start: 3rem !important;
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .my-sm-auto {
     margin-block-start: auto !important;
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .mt-sm-0 {
     margin-block-start: 0 !important;
@@ -3469,25 +3416,25 @@ select option {
     margin-inline-end: auto !important;
   }
   .mb-sm-0 {
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .mb-sm-1 {
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .mb-sm-2 {
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .mb-sm-3 {
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .mb-sm-4 {
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .mb-sm-5 {
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .mb-sm-auto {
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .ms-sm-0 {
     margin-inline-start: 0 !important;
@@ -3511,28 +3458,22 @@ select option {
     margin-inline-start: auto !important;
   }
   .p-sm-0 {
-    padding-inline: 0 !important;
-    padding-block: 0 !important;
+    padding: 0 !important;
   }
   .p-sm-1 {
-    padding-inline: 0.25rem !important;
-    padding-block: 0.25rem !important;
+    padding: 0.25rem !important;
   }
   .p-sm-2 {
-    padding-inline: 0.5rem !important;
-    padding-block: 0.5rem !important;
+    padding: 0.5rem !important;
   }
   .p-sm-3 {
-    padding-inline: 1rem !important;
-    padding-block: 1rem !important;
+    padding: 1rem !important;
   }
   .p-sm-4 {
-    padding-inline: 1.5rem !important;
-    padding-block: 1.5rem !important;
+    padding: 1.5rem !important;
   }
   .p-sm-5 {
-    padding-inline: 3rem !important;
-    padding-block: 3rem !important;
+    padding: 3rem !important;
   }
   .px-sm-0 {
     padding-inline-end: 0 !important;
@@ -3655,7 +3596,7 @@ select option {
     padding-inline-start: 3rem !important;
   }
 }
-@media (min-height: 768px) {
+@media (min-inline-size: 768px) {
   .d-md-inline {
     display: inline !important;
   }
@@ -3816,32 +3757,25 @@ select option {
     order: 6 !important;
   }
   .m-md-0 {
-    margin-inline: 0 !important;
-    margin-block: 0 !important;
+    margin: 0 !important;
   }
   .m-md-1 {
-    margin-inline: 0.25rem !important;
-    margin-block: 0.25rem !important;
+    margin: 0.25rem !important;
   }
   .m-md-2 {
-    margin-inline: 0.5rem !important;
-    margin-block: 0.5rem !important;
+    margin: 0.5rem !important;
   }
   .m-md-3 {
-    margin-inline: 1rem !important;
-    margin-block: 1rem !important;
+    margin: 1rem !important;
   }
   .m-md-4 {
-    margin-inline: 1.5rem !important;
-    margin-block: 1.5rem !important;
+    margin: 1.5rem !important;
   }
   .m-md-5 {
-    margin-inline: 3rem !important;
-    margin-block: 3rem !important;
+    margin: 3rem !important;
   }
   .m-md-auto {
-    margin-inline: auto !important;
-    margin-block: auto !important;
+    margin: auto !important;
   }
   .mx-md-0 {
     margin-inline-end: 0 !important;
@@ -3873,31 +3807,31 @@ select option {
   }
   .my-md-0 {
     margin-block-start: 0 !important;
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .my-md-1 {
     margin-block-start: 0.25rem !important;
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .my-md-2 {
     margin-block-start: 0.5rem !important;
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .my-md-3 {
     margin-block-start: 1rem !important;
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .my-md-4 {
     margin-block-start: 1.5rem !important;
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .my-md-5 {
     margin-block-start: 3rem !important;
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .my-md-auto {
     margin-block-start: auto !important;
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .mt-md-0 {
     margin-block-start: 0 !important;
@@ -3942,25 +3876,25 @@ select option {
     margin-inline-end: auto !important;
   }
   .mb-md-0 {
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .mb-md-1 {
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .mb-md-2 {
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .mb-md-3 {
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .mb-md-4 {
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .mb-md-5 {
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .mb-md-auto {
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .ms-md-0 {
     margin-inline-start: 0 !important;
@@ -3984,28 +3918,22 @@ select option {
     margin-inline-start: auto !important;
   }
   .p-md-0 {
-    padding-inline: 0 !important;
-    padding-block: 0 !important;
+    padding: 0 !important;
   }
   .p-md-1 {
-    padding-inline: 0.25rem !important;
-    padding-block: 0.25rem !important;
+    padding: 0.25rem !important;
   }
   .p-md-2 {
-    padding-inline: 0.5rem !important;
-    padding-block: 0.5rem !important;
+    padding: 0.5rem !important;
   }
   .p-md-3 {
-    padding-inline: 1rem !important;
-    padding-block: 1rem !important;
+    padding: 1rem !important;
   }
   .p-md-4 {
-    padding-inline: 1.5rem !important;
-    padding-block: 1.5rem !important;
+    padding: 1.5rem !important;
   }
   .p-md-5 {
-    padding-inline: 3rem !important;
-    padding-block: 3rem !important;
+    padding: 3rem !important;
   }
   .px-md-0 {
     padding-inline-end: 0 !important;
@@ -4128,7 +4056,7 @@ select option {
     padding-inline-start: 3rem !important;
   }
 }
-@media (min-height: 992px) {
+@media (min-inline-size: 992px) {
   .d-lg-inline {
     display: inline !important;
   }
@@ -4289,32 +4217,25 @@ select option {
     order: 6 !important;
   }
   .m-lg-0 {
-    margin-inline: 0 !important;
-    margin-block: 0 !important;
+    margin: 0 !important;
   }
   .m-lg-1 {
-    margin-inline: 0.25rem !important;
-    margin-block: 0.25rem !important;
+    margin: 0.25rem !important;
   }
   .m-lg-2 {
-    margin-inline: 0.5rem !important;
-    margin-block: 0.5rem !important;
+    margin: 0.5rem !important;
   }
   .m-lg-3 {
-    margin-inline: 1rem !important;
-    margin-block: 1rem !important;
+    margin: 1rem !important;
   }
   .m-lg-4 {
-    margin-inline: 1.5rem !important;
-    margin-block: 1.5rem !important;
+    margin: 1.5rem !important;
   }
   .m-lg-5 {
-    margin-inline: 3rem !important;
-    margin-block: 3rem !important;
+    margin: 3rem !important;
   }
   .m-lg-auto {
-    margin-inline: auto !important;
-    margin-block: auto !important;
+    margin: auto !important;
   }
   .mx-lg-0 {
     margin-inline-end: 0 !important;
@@ -4346,31 +4267,31 @@ select option {
   }
   .my-lg-0 {
     margin-block-start: 0 !important;
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .my-lg-1 {
     margin-block-start: 0.25rem !important;
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .my-lg-2 {
     margin-block-start: 0.5rem !important;
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .my-lg-3 {
     margin-block-start: 1rem !important;
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .my-lg-4 {
     margin-block-start: 1.5rem !important;
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .my-lg-5 {
     margin-block-start: 3rem !important;
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .my-lg-auto {
     margin-block-start: auto !important;
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .mt-lg-0 {
     margin-block-start: 0 !important;
@@ -4415,25 +4336,25 @@ select option {
     margin-inline-end: auto !important;
   }
   .mb-lg-0 {
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .mb-lg-1 {
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .mb-lg-2 {
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .mb-lg-3 {
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .mb-lg-4 {
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .mb-lg-5 {
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .mb-lg-auto {
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .ms-lg-0 {
     margin-inline-start: 0 !important;
@@ -4457,28 +4378,22 @@ select option {
     margin-inline-start: auto !important;
   }
   .p-lg-0 {
-    padding-inline: 0 !important;
-    padding-block: 0 !important;
+    padding: 0 !important;
   }
   .p-lg-1 {
-    padding-inline: 0.25rem !important;
-    padding-block: 0.25rem !important;
+    padding: 0.25rem !important;
   }
   .p-lg-2 {
-    padding-inline: 0.5rem !important;
-    padding-block: 0.5rem !important;
+    padding: 0.5rem !important;
   }
   .p-lg-3 {
-    padding-inline: 1rem !important;
-    padding-block: 1rem !important;
+    padding: 1rem !important;
   }
   .p-lg-4 {
-    padding-inline: 1.5rem !important;
-    padding-block: 1.5rem !important;
+    padding: 1.5rem !important;
   }
   .p-lg-5 {
-    padding-inline: 3rem !important;
-    padding-block: 3rem !important;
+    padding: 3rem !important;
   }
   .px-lg-0 {
     padding-inline-end: 0 !important;
@@ -4601,7 +4516,7 @@ select option {
     padding-inline-start: 3rem !important;
   }
 }
-@media (min-height: 1200px) {
+@media (min-inline-size: 1200px) {
   .d-xl-inline {
     display: inline !important;
   }
@@ -4762,32 +4677,25 @@ select option {
     order: 6 !important;
   }
   .m-xl-0 {
-    margin-inline: 0 !important;
-    margin-block: 0 !important;
+    margin: 0 !important;
   }
   .m-xl-1 {
-    margin-inline: 0.25rem !important;
-    margin-block: 0.25rem !important;
+    margin: 0.25rem !important;
   }
   .m-xl-2 {
-    margin-inline: 0.5rem !important;
-    margin-block: 0.5rem !important;
+    margin: 0.5rem !important;
   }
   .m-xl-3 {
-    margin-inline: 1rem !important;
-    margin-block: 1rem !important;
+    margin: 1rem !important;
   }
   .m-xl-4 {
-    margin-inline: 1.5rem !important;
-    margin-block: 1.5rem !important;
+    margin: 1.5rem !important;
   }
   .m-xl-5 {
-    margin-inline: 3rem !important;
-    margin-block: 3rem !important;
+    margin: 3rem !important;
   }
   .m-xl-auto {
-    margin-inline: auto !important;
-    margin-block: auto !important;
+    margin: auto !important;
   }
   .mx-xl-0 {
     margin-inline-end: 0 !important;
@@ -4819,31 +4727,31 @@ select option {
   }
   .my-xl-0 {
     margin-block-start: 0 !important;
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .my-xl-1 {
     margin-block-start: 0.25rem !important;
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .my-xl-2 {
     margin-block-start: 0.5rem !important;
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .my-xl-3 {
     margin-block-start: 1rem !important;
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .my-xl-4 {
     margin-block-start: 1.5rem !important;
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .my-xl-5 {
     margin-block-start: 3rem !important;
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .my-xl-auto {
     margin-block-start: auto !important;
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .mt-xl-0 {
     margin-block-start: 0 !important;
@@ -4888,25 +4796,25 @@ select option {
     margin-inline-end: auto !important;
   }
   .mb-xl-0 {
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .mb-xl-1 {
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .mb-xl-2 {
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .mb-xl-3 {
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .mb-xl-4 {
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .mb-xl-5 {
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .mb-xl-auto {
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .ms-xl-0 {
     margin-inline-start: 0 !important;
@@ -4930,28 +4838,22 @@ select option {
     margin-inline-start: auto !important;
   }
   .p-xl-0 {
-    padding-inline: 0 !important;
-    padding-block: 0 !important;
+    padding: 0 !important;
   }
   .p-xl-1 {
-    padding-inline: 0.25rem !important;
-    padding-block: 0.25rem !important;
+    padding: 0.25rem !important;
   }
   .p-xl-2 {
-    padding-inline: 0.5rem !important;
-    padding-block: 0.5rem !important;
+    padding: 0.5rem !important;
   }
   .p-xl-3 {
-    padding-inline: 1rem !important;
-    padding-block: 1rem !important;
+    padding: 1rem !important;
   }
   .p-xl-4 {
-    padding-inline: 1.5rem !important;
-    padding-block: 1.5rem !important;
+    padding: 1.5rem !important;
   }
   .p-xl-5 {
-    padding-inline: 3rem !important;
-    padding-block: 3rem !important;
+    padding: 3rem !important;
   }
   .px-xl-0 {
     padding-inline-end: 0 !important;
@@ -5074,7 +4976,7 @@ select option {
     padding-inline-start: 3rem !important;
   }
 }
-@media (min-height: 1400px) {
+@media (min-inline-size: 1400px) {
   .d-xxl-inline {
     display: inline !important;
   }
@@ -5235,32 +5137,25 @@ select option {
     order: 6 !important;
   }
   .m-xxl-0 {
-    margin-inline: 0 !important;
-    margin-block: 0 !important;
+    margin: 0 !important;
   }
   .m-xxl-1 {
-    margin-inline: 0.25rem !important;
-    margin-block: 0.25rem !important;
+    margin: 0.25rem !important;
   }
   .m-xxl-2 {
-    margin-inline: 0.5rem !important;
-    margin-block: 0.5rem !important;
+    margin: 0.5rem !important;
   }
   .m-xxl-3 {
-    margin-inline: 1rem !important;
-    margin-block: 1rem !important;
+    margin: 1rem !important;
   }
   .m-xxl-4 {
-    margin-inline: 1.5rem !important;
-    margin-block: 1.5rem !important;
+    margin: 1.5rem !important;
   }
   .m-xxl-5 {
-    margin-inline: 3rem !important;
-    margin-block: 3rem !important;
+    margin: 3rem !important;
   }
   .m-xxl-auto {
-    margin-inline: auto !important;
-    margin-block: auto !important;
+    margin: auto !important;
   }
   .mx-xxl-0 {
     margin-inline-end: 0 !important;
@@ -5292,31 +5187,31 @@ select option {
   }
   .my-xxl-0 {
     margin-block-start: 0 !important;
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .my-xxl-1 {
     margin-block-start: 0.25rem !important;
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .my-xxl-2 {
     margin-block-start: 0.5rem !important;
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .my-xxl-3 {
     margin-block-start: 1rem !important;
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .my-xxl-4 {
     margin-block-start: 1.5rem !important;
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .my-xxl-5 {
     margin-block-start: 3rem !important;
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .my-xxl-auto {
     margin-block-start: auto !important;
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .mt-xxl-0 {
     margin-block-start: 0 !important;
@@ -5361,25 +5256,25 @@ select option {
     margin-inline-end: auto !important;
   }
   .mb-xxl-0 {
-    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
   }
   .mb-xxl-1 {
-    margin-block-start: 0.25rem !important;
+    margin-block-end: 0.25rem !important;
   }
   .mb-xxl-2 {
-    margin-block-start: 0.5rem !important;
+    margin-block-end: 0.5rem !important;
   }
   .mb-xxl-3 {
-    margin-block-start: 1rem !important;
+    margin-block-end: 1rem !important;
   }
   .mb-xxl-4 {
-    margin-block-start: 1.5rem !important;
+    margin-block-end: 1.5rem !important;
   }
   .mb-xxl-5 {
-    margin-block-start: 3rem !important;
+    margin-block-end: 3rem !important;
   }
   .mb-xxl-auto {
-    margin-block-start: auto !important;
+    margin-block-end: auto !important;
   }
   .ms-xxl-0 {
     margin-inline-start: 0 !important;
@@ -5403,28 +5298,22 @@ select option {
     margin-inline-start: auto !important;
   }
   .p-xxl-0 {
-    padding-inline: 0 !important;
-    padding-block: 0 !important;
+    padding: 0 !important;
   }
   .p-xxl-1 {
-    padding-inline: 0.25rem !important;
-    padding-block: 0.25rem !important;
+    padding: 0.25rem !important;
   }
   .p-xxl-2 {
-    padding-inline: 0.5rem !important;
-    padding-block: 0.5rem !important;
+    padding: 0.5rem !important;
   }
   .p-xxl-3 {
-    padding-inline: 1rem !important;
-    padding-block: 1rem !important;
+    padding: 1rem !important;
   }
   .p-xxl-4 {
-    padding-inline: 1.5rem !important;
-    padding-block: 1.5rem !important;
+    padding: 1.5rem !important;
   }
   .p-xxl-5 {
-    padding-inline: 3rem !important;
-    padding-block: 3rem !important;
+    padding: 3rem !important;
   }
   .px-xxl-0 {
     padding-inline-end: 0 !important;
@@ -5802,11 +5691,11 @@ select option {
 
 /* Float */
 .ms-float-start {
-  float: inline-start !important;
+  float: start !important;
 }
 
 .ms-float-end {
-  float: inline-end !important;
+  float: end !important;
 }
 
 .ms-float-clear {
@@ -5832,46 +5721,46 @@ select option {
 
 .ms-posision-absolute-top {
   position: absolute !important;
-  inset-block-start: 0 !important;
+  block-start: 0 !important;
 }
 
 .ms-posision-absolute-bottom {
   position: absolute !important;
-  inset-block-end: 0 !important;
+  block-end: 0 !important;
 }
 
 .ms-posision-absolute-left {
   position: absolute !important;
-  inset-inline-start: 0 !important;
+  inline-start: 0 !important;
 }
 
 .ms-posision-absolute-right {
   position: absolute !important;
-  inset-inline-end: 0 !important;
+  inline-end: 0 !important;
 }
 
 .ms-posision-absolute-right-top {
   position: absolute !important;
-  inset-inline-end: 0 !important;
-  inset-block-start: 0 !important;
+  inline-end: 0 !important;
+  block-start: 0 !important;
 }
 
 .ms-posision-absolute-right-bottom {
   position: absolute !important;
-  inset-inline-end: 0 !important;
-  inset-block-end: 0 !important;
+  inline-end: 0 !important;
+  block-end: 0 !important;
 }
 
 .ms-posision-absolute-left-top {
   position: absolute !important;
-  inset-inline-start: 0 !important;
-  inset-block-start: 0 !important;
+  inline-start: 0 !important;
+  block-start: 0 !important;
 }
 
 .ms-posision-absolute-left-bottom {
   position: absolute !important;
-  inset-inline-start: 0 !important;
-  inset-block-end: 0 !important;
+  inline-start: 0 !important;
+  block-end: 0 !important;
 }
 
 .ms-posision-fixed {
@@ -5880,46 +5769,46 @@ select option {
 
 .ms-posision-fixed-top {
   position: fixed !important;
-  inset-block-start: 0 !important;
+  block-start: 0 !important;
 }
 
 .ms-posision-fixed-bottom {
   position: fixed !important;
-  inset-block-end: 0 !important;
+  block-end: 0 !important;
 }
 
 .ms-posision-fixed-left {
   position: fixed !important;
-  inset-inline-start: 0 !important;
+  inline-start: 0 !important;
 }
 
 .ms-posision-fixed-right {
   position: fixed !important;
-  inset-inline-end: 0 !important;
+  inline-end: 0 !important;
 }
 
 .ms-posision-fixed-right-top {
   position: fixed !important;
-  inset-inline-end: 0 !important;
-  inset-block-start: 0 !important;
+  inline-end: 0 !important;
+  block-start: 0 !important;
 }
 
 .ms-posision-fixed-right-bottom {
   position: fixed !important;
-  inset-inline-end: 0 !important;
-  inset-block-end: 0 !important;
+  inline-end: 0 !important;
+  block-end: 0 !important;
 }
 
 .ms-posision-fixed-left-top {
   position: fixed !important;
-  inset-inline-start: 0 !important;
-  inset-block-start: 0 !important;
+  inline-start: 0 !important;
+  block-start: 0 !important;
 }
 
 .ms-posision-fixed-left-bottom {
   position: fixed !important;
-  inset-inline-start: 0 !important;
-  inset-block-end: 0 !important;
+  inline-start: 0 !important;
+  block-end: 0 !important;
 }
 
 .ms-posision-sticky {
@@ -5929,8 +5818,7 @@ select option {
 /* Center div */
 .ms-div-center {
   display: block !important;
-  margin-block: 0 !important;
-  margin-inline: auto !important;
+  margin: 0 auto !important;
 }
 
 /* Shape */
@@ -6720,103 +6608,83 @@ select option {
 
 /* Padding */
 .ms-p-1 {
-  padding-block: 1rem 1rem;
-  padding-inline: 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .ms-p-2 {
-  padding-block: 2rem 2rem;
-  padding-inline: 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 .ms-p-3 {
-  padding-block: 3rem 3rem;
-  padding-inline: 3rem 3rem;
+  padding: 3rem 3rem 3rem 3rem;
 }
 
 .ms-p-4 {
-  padding-block: 4rem 4rem;
-  padding-inline: 4rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
 }
 
 .ms-p-5 {
-  padding-block: 5rem 5rem;
-  padding-inline: 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
 }
 
 .ms-p-6 {
-  padding-block: 6rem 6rem;
-  padding-inline: 6rem 6rem;
+  padding: 6rem 6rem 6rem 6rem;
 }
 
 .ms-p-7 {
-  padding-block: 7rem 7rem;
-  padding-inline: 7rem 7rem;
+  padding: 7rem 7rem 7rem 7rem;
 }
 
 .ms-p-8 {
-  padding-block: 8rem 8rem;
-  padding-inline: 8rem 8rem;
+  padding: 8rem 8rem 8rem 8rem;
 }
 
 .ms-p-9 {
-  padding-block: 9rem 9rem;
-  padding-inline: 9rem 9rem;
+  padding: 9rem 9rem 9rem 9rem;
 }
 
 .ms-p-10 {
-  padding-block: 10rem 10rem;
-  padding-inline: 10rem 10rem;
+  padding: 10rem 10rem 10rem 10rem;
 }
 
 .ms-p-11 {
-  padding-block: 11rem 11rem;
-  padding-inline: 11rem 11rem;
+  padding: 11rem 11rem 11rem 11rem;
 }
 
 .ms-p-12 {
-  padding-block: 12rem 12rem;
-  padding-inline: 12rem 12rem;
+  padding: 12rem 12rem 12rem 12rem;
 }
 
 .ms-p-13 {
-  padding-block: 13rem 13rem;
-  padding-inline: 13rem 13rem;
+  padding: 13rem 13rem 13rem 13rem;
 }
 
 .ms-p-14 {
-  padding-block: 14rem 14rem;
-  padding-inline: 14rem 14rem;
+  padding: 14rem 14rem 14rem 14rem;
 }
 
 .ms-p-15 {
-  padding-block: 15rem 15rem;
-  padding-inline: 15rem 15rem;
+  padding: 15rem 15rem 15rem 15rem;
 }
 
 .ms-p-16 {
-  padding-block: 16rem 16rem;
-  padding-inline: 16rem 16rem;
+  padding: 16rem 16rem 16rem 16rem;
 }
 
 .ms-p-17 {
-  padding-block: 17rem 17rem;
-  padding-inline: 17rem 17rem;
+  padding: 17rem 17rem 17rem 17rem;
 }
 
 .ms-p-18 {
-  padding-block: 18rem 18rem;
-  padding-inline: 18rem 18rem;
+  padding: 18rem 18rem 18rem 18rem;
 }
 
 .ms-p-19 {
-  padding-block: 19rem 19rem;
-  padding-inline: 19rem 19rem;
+  padding: 19rem 19rem 19rem 19rem;
 }
 
 .ms-p-20 {
-  padding-block: 20rem 20rem;
-  padding-inline: 20rem 20rem;
+  padding: 20rem 20rem 20rem 20rem;
 }
 
 .ms-pt-1 {
@@ -7154,10 +7022,10 @@ select option {
   overflow: hidden;
 }
 .ms-hero .ms-hero-background .ms-hero-cover {
-  inset-block-start: 0;
-  inset-inline-start: 0;
-  inset-block-end: 0;
-  inset-inline-end: 0;
+  block-start: 0;
+  inline-start: 0;
+  block-end: 0;
+  inline-end: 0;
   position: absolute;
   overflow: hidden;
   background: rgb(2, 0, 36);
@@ -7169,8 +7037,7 @@ select option {
 .ms-hero .ms-hero-body {
   z-index: 2;
   flex-grow: 1;
-  padding-block: 4rem;
-  padding-inline: 1.5rem;
+  padding: 4rem 1.5rem;
 }
 .ms-hero .ms-hero-body.ms-center {
   flex-grow: 0;
@@ -7183,14 +7050,12 @@ select option {
 }
 .ms-hero .ms-hero-body .ms-hero-subtitle {
   color: rgba(var(--main-text-color), 1);
-  margin-block: 0.5rem;
-  margin-inline: 0;
+  margin: 0.5rem 0;
   padding: 0;
 }
 .ms-hero .ms-hero-body .ms-hero-content {
   color: rgba(var(--main-text-color), 1);
-  margin-block: 0.5rem;
-  margin-inline: 0;
+  margin: 0.5rem 0;
   padding: 0;
 }
 .ms-hero.ms-primary {
@@ -7242,16 +7107,13 @@ select option {
   color: #fff;
 }
 .ms-hero.ms-small .ms-hero-body {
-  padding-block: 2rem;
-  padding-inline: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 .ms-hero.ms-medium .ms-hero-body {
-  padding-block: 8rem;
-  padding-inline: 1.5rem;
+  padding: 8rem 1.5rem;
 }
 .ms-hero.ms-large .ms-hero-body {
-  padding-block: 15rem;
-  padding-inline: 1.5rem;
+  padding: 15rem 1.5rem;
 }
 .ms-hero.ms-half-screen {
   min-block-size: 50vh;
@@ -7274,10 +7136,8 @@ select option {
   line-height: 0.9rem;
   font-size: 0.9rem;
   /* Margins */
-  margin-block: 0;
-  margin-inline: 0.1rem;
-  padding-block: 0.1rem;
-  padding-inline: 0.4rem;
+  margin: 0 0.1rem;
+  padding: 0.1rem 0.4rem;
   /* Close */
 }
 .ms-label.ms-label-active {
@@ -7373,18 +7233,15 @@ select option {
 .ms-label.ms-small {
   font-size: 0.7rem;
   border-radius: var(--default-border-radius);
-  padding-block: 0.1rem;
-  padding-inline: 0.3rem;
+  padding: 0.1rem 0.3rem;
 }
 .ms-label.ms-medium {
   font-size: 1rem;
-  padding-block: 0.3rem;
-  padding-inline: 0.7rem;
+  padding: 0.3rem 0.7rem;
 }
 .ms-label.ms-large {
   font-size: 1.2rem;
-  padding-block: 0.5rem;
-  padding-inline: 0.9rem;
+  padding: 0.5rem 0.9rem;
 }
 .ms-label.ms-rounded {
   border-radius: 50rem;
@@ -7408,8 +7265,8 @@ select option {
   inline-size: 2px;
   /* Position */
   position: absolute;
-  inset-inline-start: 6.7px;
-  inset-block-start: 2.5px;
+  inline-start: 6.7px;
+  block-start: 2.5px;
   /* Content */
   content: " ";
   /* Color */
@@ -7492,7 +7349,7 @@ select option {
   inline-size: 100%;
   block-size: 50px;
   /* Colors */
-  line-height: 50px;
+  line-block-size: 50px;
   text-align: center;
   /* Color */
   background-color: rgba(var(--light-bg-color), 1);
@@ -7501,12 +7358,11 @@ select option {
   /* General */
   inline-size: auto;
   block-size: 50px;
-  float: inline-start;
+  float: left;
   /* Colors */
   color: rgba(var(--main-text-color), 1);
   /* Margin */
-  margin-inline: 15px 0;
-  margin-block: 0;
+  margin: 0 0 0 15px;
   padding: 0;
 }
 .ms-menu .ms-menu-logo p {
@@ -7516,19 +7372,18 @@ select option {
   padding: 0;
 }
 .ms-menu .ms-menu-logo img {
-  max-height: 50px;
+  max-block-size: 50px;
 }
 .ms-menu .ms-menu-link {
   inline-size: auto;
   block-size: 100%;
-  float: inline-end;
+  float: start;
 }
 .ms-menu .ms-menu-link ul {
   block-size: inherit;
   list-style: none;
   text-align: end;
-  margin-block: 0;
-  margin-inline: 0 15px;
+  margin: 0 15px 0 0;
   padding: 0;
 }
 .ms-menu .ms-menu-link ul li {
@@ -7539,7 +7394,7 @@ select option {
   padding: 0;
 }
 .ms-menu .ms-menu-link ul li:last-child {
-  padding-inline-end: 0;
+  padding-right: 0;
 }
 .ms-menu .ms-menu-link ul li a {
   /* Animation */
@@ -7548,8 +7403,7 @@ select option {
   color: rgba(var(--main-text-color), 1);
   text-decoration: none;
   font-weight: 600;
-  padding-block: 0;
-  padding-inline: 20px;
+  padding: 0 20px;
 }
 .ms-menu .ms-menu-link ul li a:hover {
   color: rgba(var(--main-text-color), 0.6);
@@ -7567,7 +7421,7 @@ select option {
 }
 
 /* Screen < 768px */
-@media screen and (max-height: 768px) {
+@media screen and (max-inline-size: 768px) {
   .ms-menu .ms-menu-link {
     z-index: 999;
     background-color: rgba(var(--light-bg-color), 1);
@@ -7580,11 +7434,11 @@ select option {
     display: block;
     max-block-size: 0;
     overflow: hidden;
-    transition: max-width 0.3s;
+    transition: max-height 0.3s;
     margin: 0;
   }
   .ms-menu .ms-menu-link ul li {
-    text-align: start;
+    text-align: left;
     inline-size: 100%;
     block-size: 50px;
     margin: 0;
@@ -7595,20 +7449,19 @@ select option {
     block-size: inherit;
     display: block;
     position: absolute;
-    inset-block-start: 0;
-    inset-block-end: 0;
-    line-height: 60px;
+    block-start: 0;
+    inline-end: 0;
+    line-block-size: 60px;
   }
   .ms-menu #ms-menu-toggle:checked ~ ul {
-    max-inline-size: 100%;
+    max-block-size: 100%;
   }
   .ms-menu .ms-menu-icon i {
     font-size: 1.7em;
   }
 }
 .ms-pagination {
-  margin-block: 1rem;
-  margin-inline: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 .ms-pagination ul {
@@ -7682,8 +7535,7 @@ select option {
   background-color: rgba(var(--light-bg-color), 1);
   text-align: center;
   overflow: hidden;
-  margin-block: 10px;
-  margin-inline: 0;
+  margin: 10px 0;
   border-radius: var(--default-border-radius);
 }
 .ms-progress .ms-progress-fill {
@@ -7766,7 +7618,7 @@ select option {
 }
 .ms-tab ul li.ms-logo img {
   max-block-size: 30px;
-  vertical-align: end;
+  vertical-align: block-end;
 }
 .ms-tab ul li.ms-logo a:hover {
   border-block-end: none;
@@ -7794,13 +7646,12 @@ select option {
 }
 .ms-table thead {
   color: rgba(var(--default-bg-color), 1);
-  text-align: start;
+  text-align: left;
 }
 .ms-table td,
 .ms-table th {
   color: rgba(var(--default-bg-color), 1);
-  padding-block: 0.8rem;
-  padding-inline: 0.4rem;
+  padding: 0.8rem 0.4rem;
   border-block-end: 2px solid rgba(var(--default-border-color), 1);
 }
 .ms-table th {
@@ -7869,8 +7720,7 @@ mark,
   border-block-end: 0.05rem solid #ffd367;
   border-radius: var(--default-border-radius);
   /* Margin */
-  padding-block: 0.1rem;
-  padding-inline: 0.2rem;
+  padding: 0.1rem 0.2rem;
 }
 
 /* Code */
@@ -7885,8 +7735,7 @@ code,
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */
-  padding-block: 0.2rem;
-  padding-inline: 0.4rem;
+  padding: 0.2rem 0.4rem;
 }
 
 /* Terminal */
@@ -7900,8 +7749,7 @@ kbd,
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */
-  padding-block: 0.2rem;
-  padding-inline: 0.2rem;
+  padding: 0.2rem 0.2rem;
 }
 
 /* Sementic */
@@ -7937,7 +7785,7 @@ pre cite {
 sup {
   /* General */
   position: relative;
-  inset-block-start: -0.4rem;
+  block-start: -0.4rem;
   /* Text */
   line-height: 0;
   vertical-align: baseline;
@@ -7947,7 +7795,7 @@ sup {
 sub {
   /* General */
   position: relative;
-  inset-block-end: -0.2rem;
+  block-end: -0.2rem;
   /* Test */
   line-height: 0;
   font-size: 75%;
@@ -8003,8 +7851,7 @@ hr, .ms-hr {
   /* Border */
   border: none;
   /* Margin */
-  margin-block: 1rem;
-  margin-inline: 0;
+  margin: 1rem 0;
 }
 
 .ms-user {
@@ -8039,27 +7886,26 @@ hr, .ms-hr {
 .ms-user .ms-user-content {
   color: rgba(var(--main-text-color), 1);
   box-sizing: border-box;
-  margin-block: 0;
-  margin-inline: auto;
+  margin: 0 auto;
   margin-block-start: 1rem;
 }
 .ms-user .ms-user-pined {
   position: absolute;
-  inset-block-start: 0.5rem;
-  inset-inline-end: 0.5rem;
+  block-start: 0.5rem;
+  inline-end: 0.5rem;
 }
 .ms-user.ms-compact .ms-avatar {
-  float: inline-start;
+  float: start;
   margin: 0;
 }
 .ms-user.ms-compact .ms-user-info {
-  float: inline-start;
+  float: start;
   text-align: start;
   margin: 0;
   margin-inline-start: 1rem;
 }
 .ms-user.ms-compact .ms-user-content {
-  float: inline-start;
+  float: start;
   inline-size: 100%;
   margin-block-start: 1rem;
 }
@@ -8074,4 +7920,4 @@ hr, .ms-hr {
   border: 2px solid rgba(var(--default-border-color), 1);
 }
 
-/*# sourceMappingURL=minstyle.io.min.css.map */
+/*# sourceMappingURL=monstyle.css.map */

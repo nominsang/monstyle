@@ -1,16 +1,18 @@
 .ms-footer {
-	width: 100%;
+	inline-size: 100%;
 	background-color: rgba(var(--light-bg-color), 1);
 	text-align: center;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 3rem 1rem 4rem 1rem;
+	padding-block: 3rem 4rem;
+	padding-inline: 1rem;
 
 	p {
-		width: 100%;
+		inline-size: 100%;
 	}
 
 	&.ms-small {
-		padding: 1.5rem 1rem;
+		padding-block: 1.5rem;
+		padding-inline: 1rem;
 	}
 }

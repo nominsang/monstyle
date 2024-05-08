@@ -1,6 +1,7 @@
 .ms-breadcrumb {
 	/* Margin */
-	padding: 1rem;
+	padding-block: 1rem;
+	padding-inline: 1rem;
 
 	/* Border */
 	border-radius: var(--default-border-radius);
@@ -25,7 +26,8 @@
 			font-weight: 500;
 
 			/* Margin */
-			margin: 0 0 0 0.5rem;
+			margin-block: 0;
+			margin-inline: 0.5rem 0;
 			padding: 0;
 
 			a {
@@ -36,7 +38,7 @@
 
 			&:after {
 				content: "/";
-				padding-left: 0.5rem;
+				padding-inline-start: 0.5rem;
 			}
 
 			&:last-child:after {
@@ -44,14 +46,14 @@
 			}
 
 			&:first-child {
-				margin-left: 0;
+				margin-inline-start: 0;
 			}
 		}
 	}
 
 	&.ms-background {
 		/* General */
-		width: 100%;
+		inline-size: 100%;
 
 		/* Color */
 		background-color: rgba(var(--light-bg-color), 1);
@@ -59,10 +61,10 @@
 
 	&.ms-border {
 		/* Genral */
-		width: 100%;
+		inline-size: 100%;
 
 		/* Border */
-		border-bottom: 2px solid rgba(var(--default-border-color), 1);
+		border-block-end: 2px solid rgba(var(--default-border-color), 1);
 		border-radius: 0;
 	}
 }

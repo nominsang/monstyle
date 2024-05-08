@@ -1,5 +1,6 @@
 .ms-pagination {
-	margin: 1rem 0;
+	margin-block: 1rem;
+	margin-inline: 0;
 	padding: 0;
 
 	ul {
@@ -56,16 +57,16 @@
 	&.ms-border {
 		ul {
 			li {
-				margin-right: -1px;
+				margin-inline-end: -1px;
 
 				&:first-child a {
-					border-top-left-radius: var(--default-border-radius);
-					border-bottom-left-radius: var(--default-border-radius);
+					border-block-start-inline-start-radius: var(--default-border-radius);
+					border-block-end-inline-start-radius: var(--default-border-radius);
 				}
 
 				&:last-child a {
-					border-top-right-radius: var(--default-border-radius);
-					border-bottom-right-radius: var(--default-border-radius);
+					border-block-start-inline-end-radius: var(--default-border-radius);
+					border-block-end-inline-end-radius: var(--default-border-radius);
 				}
 
 				a {
