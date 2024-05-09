@@ -33,7 +33,7 @@
 		}
 
 		img {
-			max-height: 50px;
+			max-block-size: 50px;
 		}
 	}
 
@@ -95,8 +95,8 @@
 	}
 }
 
-/* Screen < 768px */
-@media screen and (max-height: 768px) {
+/* Screen height < 640px */
+@media screen and (max-height: 640px) {
 	.ms-menu {
 		.ms-menu-link {
 			z-index: 999;
@@ -110,7 +110,7 @@
 				display: block;
 				max-block-size: 0;
 				overflow: hidden;
-				transition: max-width 0.3s;
+				transition: max-block-size 0.3s;
 				margin: 0;
 
 				li {
@@ -129,7 +129,7 @@
 			display: block;
 			position: absolute;
 			inset-block-start: 0;
-			inset-block-end: 0;
+			inset-inline-end: 0;
 			line-height: 60px;
 		}
 

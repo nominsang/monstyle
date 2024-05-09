@@ -1,11 +1,11 @@
-  window.onload = function() {
+window.onload = function() {
   var mousewheelevt = (/Firefox/i.test(navigator.userAgent))
     ?"DOMMouseScroll" : "mousewheel";
-  if(document.attachEvent) {
+  if(document.attachEvent) {/* IE 方法*/
     document.attachEvent("on" + mousewheelevt, function(e){
       mousewheel_event(e.wheelDelta);
     });
-  }else if(document.addEventListener) {
+  }else if(document.addEventListener) {/*非 IE 方法*/
     document.addEventListener(mousewheelevt, function(e){
       mousewheel_event(e.detail);
     }, false);
