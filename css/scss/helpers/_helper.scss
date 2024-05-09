@@ -593,7 +593,8 @@ $base-margin: 1rem;
 /* Margin */
 @for $i from 1 through 20 {
 	.ms-m-#{$i} {
-		margin: $base-margin * $i $base-margin * $i $base-margin * $i $base-margin * $i;
+		margin-inline: $base-margin * $i;
+		margin-block: $base-margin * $i;
 	}
 }
 
@@ -624,8 +625,8 @@ $base-margin: 1rem;
 /* Padding */
 @for $i from 1 through 20 {
 	.ms-p-#{$i} {
-		padding-block: $base-margin * $i $base-margin * $i;
-		padding-inline: $base-margin * $i $base-margin * $i;
+		padding-block: $base-margin * $i;
+		padding-inline: $base-margin * $i;
 	}
 }
 
