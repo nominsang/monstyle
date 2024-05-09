@@ -75,7 +75,8 @@
 	.ms-section {
 		.ms-section-bloc {
 			border-block-end: 2px solid rgba(var(--default-border-color), 1);
-			padding: 1rem;
+			padding-inline: 1rem;
+			padding-block: 1rem;
 
 			p {
 				color: rgba(var(--main-text-color), 1);
@@ -100,7 +101,8 @@
 		border-radius: var(--default-border-radius);
 
 		/* Margin */
-		padding: 1rem;
+		padding-inline: 1rem;
+		padding-block: 1rem;
 	}
 
 	&.ms-fill {
@@ -111,7 +113,8 @@
 		border-radius: var(--default-border-radius);
 
 		/* Margin */
-		padding: 1rem;
+		padding-block: 1rem;
+		padding-inline: 1rem;
 	}
 
 	&.ms-inline {
@@ -122,12 +125,13 @@
 		}
 
 		.ms-card-btn {
-			padding: 0 1rem;
+			padding-inline: 0 1rem;
+			padding-block: 0 1rem;
 
 			.ms-btn {
 				/* Position */
 				position: relative;
-				top: 50%;
+				inset-block-start: 50%;
 
 				/* Transform */
 				transform: translateY(-50%);
